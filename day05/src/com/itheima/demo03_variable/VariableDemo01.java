@@ -14,6 +14,10 @@ package com.itheima.demo03_variable;
  *
  * 2. 初始化值不同
  *   成员变量：有默认值
+ *     例如：
+ *       String: null
+ *       int: 0
+ *       double: 0.0
  *   局部变量：没有默认值，必须先定义，再赋值，然后才能使用
  *
  * 3. 在内存中的存储位置不同
@@ -33,6 +37,7 @@ public class VariableDemo01 {
 
     public void show() {
         // 局部变量
+        // int y;   // 这样写会报错，因为局部变量没有默认值
         int y = 20;
         System.out.println(x);
         System.out.println(y);
